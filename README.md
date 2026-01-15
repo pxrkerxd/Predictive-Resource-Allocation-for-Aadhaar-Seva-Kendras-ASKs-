@@ -1,71 +1,99 @@
-🛡️ Aadhaar Intelligence Hub: Gov-Tech Command Center
-Optimizing Citizen Services through Predictive Analytics & Geospatial Intelligence
-The Aadhaar Intelligence Hub is a data-driven decision support system designed to assist UIDAI administrators in managing Aadhaar Seva Kendras (ASKs). It transforms millions of rows of fragmented API data into actionable insights to reduce waiting times, bridge demographic gaps, and optimize resource deployment.
+# 🛡️ Aadhaar Intelligence Hub  
+### A Gov-Tech Command Center for Optimizing Citizen Services using Predictive Analytics & Geospatial Intelligence
 
-🚀 Key Features
-📈 Predictive Resource Allocation: Forecasts daily traffic surges at Aadhaar centers using historical demand patterns. Includes a "System Stress Gauge" to alert managers when capacity is exceeded.
+The **Aadhaar Intelligence Hub** is a data-driven decision support system designed to assist **UIDAI administrators** in efficiently managing **Aadhaar Seva Kendras (ASKs)**.  
+It transforms millions of rows of fragmented Aadhaar API datasets into **actionable insights** to reduce waiting times, identify demographic gaps, and optimize resource deployment across regions.
 
-👶 MBU Gap Analysis: Identifies the "Digital Divide" by comparing new child enrolments against Mandatory Biometric Updates (MBU). High-gap districts are automatically flagged.
+---
 
-🚚 Strategic Mobile Van Planner: An algorithmic engine that suggests high-priority routes for mobile Aadhaar vans based on regional demand and service gaps.
+## 🚀 Core Capabilities
 
-🌍 Geospatial Command Center: A state-and-district level heatmap to visualize national demand and regional inequalities.
+### 📈 Predictive Resource Allocation
+- Forecasts daily enrolment and update traffic at Aadhaar centers using historical demand patterns  
+- Includes a **System Stress Gauge** to alert administrators when service capacity is exceeded
 
-📋 Executive PDF Reporting: Generate professional, timestamped briefing documents for field officers with a single click.
+### 👶 MBU (Mandatory Biometric Update) Gap Analysis
+- Identifies the **digital divide** by comparing:
+  - New child enrolments  
+  - Mandatory Biometric Updates (MBU)
+- Automatically flags **high-gap districts** requiring immediate attention
 
-🛠️ Tech Stack
-Language: Python 3.9+
+### 🚚 Strategic Mobile Aadhaar Van Planner
+- Algorithmically recommends **high-priority routes** for mobile Aadhaar vans  
+- Optimizes outreach based on regional demand and service gaps
 
-Frontend: Streamlit (with Custom Glassmorphism CSS)
+### 🌍 Geospatial Command Center
+- Interactive **state- and district-level heatmaps**
+- Visualizes national demand density and regional service inequalities
 
-Data Processing: Pandas
+### 📋 Executive PDF Reporting
+- One-click generation of **professional, timestamped PDF briefing reports**
+- Designed for field officers and decision-makers
 
-Database: SQLite3 (Cleaned & Normalized)
+---
 
-Visualization: Plotly Express & Plotly Graph Objects
+## 🛠️ Tech Stack
 
-Reporting: FPDF
+| Layer | Technology |
+|-----|-----------|
+| Language | Python 3.9+ |
+| Frontend | Streamlit (Custom Glassmorphism CSS) |
+| Data Processing | Pandas |
+| Database | SQLite3 (Cleaned & Normalized) |
+| Visualization | Plotly Express, Plotly Graph Objects |
+| Reporting | FPDF |
 
-📁 Project Structure
-Plaintext
+---
+
+## 📁 Project Structure
 
 aadhaar_project/
-├── app.py                # Main Streamlit Web Application
-├── db_builder.py         # Data Cleaning & SQL Normalization Script
-├── aadhaar_analysis.db   # Processed SQLite Database
-├── requirements.txt      # List of dependencies
-└── data/                 # Raw CSV API Datasets (Biometric, Demographic, Enrolment)
-⚙️ Installation & Setup
-1. Clone the repository
-Bash
+├── app.py # Main Streamlit web application
+├── db_builder.py # Data cleaning & SQL normalization engine
+├── aadhaar_analysis.db # Processed SQLite database
+├── requirements.txt # Python dependencies
+└── data/ # Raw CSV API datasets
 
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/yourusername/aadhaar-intelligence-hub.git
 cd aadhaar-intelligence-hub
-2. Install Dependencies
-Bash
-
+2️⃣ Install Dependencies
 python -m pip install -r requirements.txt
-3. Build the Cleaned Database
-Run the builder script to merge the raw CSVs and apply the modern administrative mapping (fixing Telangana/Andhra legacy issues).
 
-Bash
+3️⃣ Build the Cleaned Database
+
+Run the normalization engine to merge raw datasets and fix legacy administrative mappings (e.g., Telangana–Andhra bifurcation).
 
 python db_builder.py
-4. Launch the Dashboard
-Bash
 
+4️⃣ Launch the Dashboard
 python -m streamlit run app.py
-🧩 The "Data Cleaning" Innovation
-One of the biggest challenges in this project was handling dirty historical data. Our db_builder.py script includes a custom Normalization Engine that:
 
-Remaps legacy districts (like Hyderabad/Nalgonda) to their modern states (Telangana).
+🧩 Data Cleaning & Normalization Engine (Key Innovation)
 
-Standardizes inconsistent casing (e.g., merging "Yadgir" and "yadgir").
+Handling dirty and inconsistent historical data was a major challenge in this project.
 
-Fixes common typographical variants in district names to ensure 100% data accuracy.
+The db_builder.py script implements a custom Normalization Engine that:
+
+Remaps legacy districts (e.g., Hyderabad, Nalgonda) to modern states (Telangana)
+
+Standardizes inconsistent casing (e.g., "Yadgir" vs "yadgir")
+
+Fixes common typographical variations in district names
+
+Ensures 100% referential integrity before analytics and visualization
 
 📝 License
-This project is developed for [Insert Hackathon Name] and is open for educational use under the MIT License.
 
-Contributor
-https://github.com/pxrkerxd
+This project was developed for UIDAI DATA HACKATHON 2026 and is released under the MIT License for educational and non-commercial use.
+
+👤 Contributor
+
+Parijat Dwary
+GitHub: https://github.com/pxrkerxd
