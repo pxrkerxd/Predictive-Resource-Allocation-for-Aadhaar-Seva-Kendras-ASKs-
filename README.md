@@ -59,7 +59,8 @@ aadhaar_project/
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
+### 
+1️⃣ Clone the Repository
 bash
 git clone https://github.com/yourusername/aadhaar-intelligence-hub.git
 cd aadhaar-intelligence-hub
