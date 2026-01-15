@@ -60,7 +60,7 @@ aadhaar_project/
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
-```bash
+bash
 git clone https://github.com/yourusername/aadhaar-intelligence-hub.git
 cd aadhaar-intelligence-hub
 2️⃣ Install Dependencies
