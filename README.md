@@ -64,6 +64,7 @@ aadhaar_project/
 bash
 git clone https://github.com/yourusername/aadhaar-intelligence-hub.git
 cd aadhaar-intelligence-hub
+
 2️⃣ Install Dependencies
 python -m pip install -r requirements.txt
 
